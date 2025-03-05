@@ -4,7 +4,7 @@ import java.awt.*;
 public class BotaoCampoMinado extends JButton {
     private int estado;
 
-    public BotaoCampoMinado(int estado){
+    public BotaoCampoMinado(){
         this.estado = CampoMinado.TAPADO;
     }
 
@@ -27,6 +27,10 @@ public class BotaoCampoMinado extends JButton {
                 setText("!");
                 setBackground(Color.red);
                 setForeground(Color.white);
+            case CampoMinado.REBENTADO:
+                setText("*");
+                setBackground(Color.orange);
+                break;
             default:
                 setText(String.valueOf(estado));
                 setBackground(Color.LIGHT_GRAY);
