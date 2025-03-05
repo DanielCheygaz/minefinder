@@ -18,7 +18,7 @@ public class CampoMinado {
         this.estado = new int[nrLinhas][nrColunas]; // Valores começam a 0
     }
 
-    public boolean hasMina(int x, int y) {
+    public boolean hasMina(int x, int y) { //boas
         return minas[x][y];
     }
 
