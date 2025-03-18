@@ -29,7 +29,7 @@ public class MinesFinder extends JFrame {
         jogoDificilButton.addActionListener(this::jogoDificilButtonActionPerformed);
     }
     private void jogoFacilButtonActionPerformed(ActionEvent e){
-        new JanelaDeJogo(new CampoMinado(9,9,10),recordesFacil);
+        new JanelaDeJogo(new CampoMinado(9,9,1),recordesFacil);
         setVisible(false);
     }
 
